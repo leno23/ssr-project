@@ -42,5 +42,14 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
+  },
+  proxy:{
+    '/api':{
+      target:'http://127.0.0.1:7001',
+      secure:false,
+      pathRewrite:{
+        '^api':""
+      }
+    }
   }
 }
