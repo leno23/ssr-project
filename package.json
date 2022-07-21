@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev":"cd ./server && yarn start && cd ../front && yarn dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
